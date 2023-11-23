@@ -11,7 +11,7 @@
     $data = json_decode(file_get_contents('php://input'), true);
     if (isset($data['x'])) {
         echo json_encode(['status' => 'success', 'message' => 'Message received: ' . $data['x'] .' '. $data['y']]);
-        // $myfile = fopen($imgfilename."clicked", "a") or die("Unable to open file!");
+        $myfile = fopen($imgfilename."clicked", "a") or die("Unable to open file!");
         $txt = $data['x'] .':'. $data['y']."\n";
         fwrite($myfile, $txt);
         fclose($myfile);
