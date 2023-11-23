@@ -77,7 +77,7 @@
           window.localStorage.setItem('arr', data);
           
           imgname.replaceAll("/", "%2F");
-          axios.post('http://localhost:4000/save.php?name=' + imgname, {x: posX, y: posY}).then(response => {
+          axios.post('http://localhost/save.php?name=' + imgname, {x: posX, y: posY}).then(response => {
             console.log(response.data)
             this.$data.x = "" + posX
             this.$data.y = "" + posY
