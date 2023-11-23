@@ -83,7 +83,7 @@
             this.$data.y = "" + posY
             //window.localStorage.setItem(storagePrefix + imgname, "true")
 
-            if (ix < imgs.length) {
+            if (ix < imgs.length -1) {
               ix = ix + 1
               imgname = imgs[ix]
               label = labels[ix]
