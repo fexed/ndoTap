@@ -23,6 +23,9 @@
       <div class="result">
         <p id="coord" v-html="x != '' ? `${x}, ${y}`: ''"></p>
       </div>
+      <div class="result">
+        Made by Federico Matteoni - <a href="https://fexed.github.io">fexed.github.io</a>
+      </div>
   </div>
 </template>
 
